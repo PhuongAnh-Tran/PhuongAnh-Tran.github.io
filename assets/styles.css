@@ -1,3 +1,20 @@
+nav ul {
+  list-style-type: none;   /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;           /* Use Flexbox to align items horizontally */
+}
+
+nav ul li {
+  margin-right: 20px;      /* Add spacing between items */
+}
+
+nav ul li a {
+  text-decoration: none;   /* Remove underline from links */
+  padding: 10px 15px;      /* Add some padding for clickable area */
+  display: block;          /* Make the link area block-level */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
