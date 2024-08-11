@@ -28,10 +28,10 @@ body, html {
   align-items: flex-start; /* Align text to the left */
 }
 
-h1 {
+#about h1 {
   font-size: 2.5rem;
   margin: 0; /* Remove margin for better alignment */
-  color: #16425b;
+  color: white;
 }
 
 p {
@@ -56,7 +56,6 @@ p {
   background-color: #16425b;
   padding: 10px 0;
   z-index: 1000; /* Ensures the navbar stays on top of other elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -80,44 +79,40 @@ p {
 }
 
 .navbar ul li a:hover {
-  background-color: #555;
+  background-color: #103042;
   color: #fff;
   border-radius: 4px;
 }
 
 /* Section Background Colors */
 #about {
-  background-color: #f4f4f4;
+  background-color: #16425b;
   padding: 0px 130px;
 }
 
-#skills {
-  background-color: #e0e1dd;
-  padding: 0px 130px;
-}
-
-#skills ul {
-  padding: 150px;
-  font-size: 27px;
-  list-style-type:circle;
-}
-
-#skills li {
-  padding: 15px;
+#about p {
+  color: white;
 }
 
 #projects {
-  background-color: #778da9;
+  background-color: #f4f4f4;
 }
 
-#experience {
-  background-color: #415a77;
+#projects h1 {
+  color: #16425b;
+}
+
+#resume h1 {
+  color: #16425b;
 }
 
 #contact {
-  background-color: #1b263b;
+  background-color: #f4f4f4;
 }
 
+#contact h1 {
+  color: #16425b;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar ul {
