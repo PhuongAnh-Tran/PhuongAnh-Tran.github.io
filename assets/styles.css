@@ -67,7 +67,8 @@ p {
 }
 
 .navbar ul li {
-  margin: 0 15px;
+  margin: 5px 30px;
+  font-family: Helvetica, sans-serif;
 }
 
 .navbar ul li a {
@@ -75,14 +76,25 @@ p {
   text-decoration: none;
   font-size: 1rem;
   padding: 10px 15px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; /* Start with no underline */
 }
 
-.navbar ul li a:hover {
-  background-color: #103042;
+.navbar ul li a:hover,
+.navbar ul li a:focus {
   color: #fff;
-  border-radius: 4px;
+  border-bottom: 2px solid #fff; /* White underline on hover or focus */
 }
+
+.navbar ul li a:focus {
+  outline: none; /* Remove the default orange focus outline */
+}
+
+/* Active state styling */
+.navbar ul li a.active {
+  border-bottom: 2px solid #fff; /* White underline for active section */
+}
+
 
 /* Section Background Colors */
 #about {
@@ -104,6 +116,26 @@ p {
 
 #resume h1 {
   color: #16425b;
+}
+
+#resume p {
+  font-size: 1.5rem; /* Ensure text is readable */
+  margin: 20px 0; /* Add spacing around the text */
+  color: #16425b; /* Consistent color scheme */
+}
+
+#resume a.button {
+  color: white;
+  background-color: #1c5374;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#resume a.button:hover {
+  background-color: #103042; /* Darken on hover */
 }
 
 #contact {
