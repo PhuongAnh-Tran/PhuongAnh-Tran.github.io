@@ -116,6 +116,7 @@ p {
 
 #resume h1 {
   color: #103566;
+  padding: 100px;
 }
 
 #resume p {
@@ -144,6 +145,11 @@ p {
 
 #contact h1 {
   color: #103566;
+  padding: 10px 100px;
+}
+
+#contact p {
+  margin: 0px 100px;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
