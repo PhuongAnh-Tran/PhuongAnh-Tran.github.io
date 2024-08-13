@@ -72,6 +72,7 @@ p {
 .navbar ul li {
   margin: 5px 30px;
   font-family: 'DM Sans',Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar ul li a {
@@ -97,7 +98,6 @@ p {
 .navbar ul li a.active {
   border-bottom: 2px solid #fff; /* White underline for active section */
 }
-
 
 /* Section Background Colors */
 #about {
