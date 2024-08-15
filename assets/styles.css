@@ -76,6 +76,7 @@ section {
 #about .text-content {
   flex: 1; /* Let the text content take up available space */
   margin-right: 20px; /* Space between text and image */
+  flex-grow: 1;
 }
 
 .profile-picture {
