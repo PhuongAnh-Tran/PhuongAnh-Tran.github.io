@@ -1,64 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Anh Tran | Creative Software Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Remix icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-    <!-- Swiper Slider CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="assets/images/logo.png" alt="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anh Tran | Creative Software Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Remix icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <!-- Swiper Slider CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+</head>
+
+<body>
+  <!-- HERO HEADER & NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="">
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <div class="bars">
+        <i class="ri-menu-2-fill"></i>
+      </div>
+    </nav>
+    <!-- HERO HEADER -->
+    <div class="hero_header" id="home">
+      <img src="assets/images/shape-one.png" alt="" class="hero_shape">
+      <img src="assets/images/border-one.png" alt="" class="hero_shape border_shape">
+      <div class="hero_img">
+        <img src="assets/images/hero.png" alt="">
+      </div>
+      <div class="hero_content">
+        <h2>Hi, i am</h2>
+        <h1>Anh Tran <img src="assets/images/shape-two.png" alt="" class="text_shape"></h1>
+        <h3>I am a <span class="text"></span></h3>
+        <div class="hero_btns">
+          <button>Download CV</button>
+          <button>Hire me <i class="ri-arrow-right-up-line"></i></button>
         </div>
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Testimonial</a></li>
-        </ul>
-        <div class="bars">
-          <i class="ri-menu-2-fill"></i>
+      </div>
+      <div class="top_bg_text">Anh</div>
+      <div class="bottom_bg_text">Tran</div>
+      <img src="assets/images/shape-1.png" alt="" class="hero_bg_shape hero_bg_shape1">
+      <img src="assets/images/shape-2.png" alt="" class="hero_bg_shape hero_bg_shape2">
+      <img src="assets/images/shape-3.png" alt="" class="hero_bg_shape hero_bg_shape3">
+      <img src="assets/images/shape-4.png" alt="" class="hero_bg_shape hero_bg_shape4">
+    </div>
+  </header>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <img src="assets/images/about-shape-1.png" alt="" class="about_shape about_shape1">
+    <img src="assets/images/about-shape-2.png" alt="" class="about_shape about_shape2">
+    <img src="assets/images/about-shape-3.png" alt="" class="about_shape about_shape3">
+    <div class="headings">
+      <h1>About <span>me</span></h1>
+      <div class="anim_line_box"></div>
+    </div>
+    <div class="about_container">
+      <div class="about_left">
+        <h1>"Creativity bleeds from the pen of inspiration</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque voluptatum nostrum inventore
+          excepturi omnis, voluptas in, quo distinctio iusto modi esse impedit earum, maiores itaque velit suscipit quas
+          aliquid.</p>
+        <div class="client_name">
+          <h3>Sr. Developer</h3>
+          <p>Anh Tran</p>
         </div>
-      </nav>
-      <!-- HERO HEADER -->
-      <div class="hero_header">
-        <img src="assets/images/shape-one.png" alt="" class="hero_shape">
-        <img src="assets/images/border-one.png" alt="" class="hero_shape border_shape">
-        <div class="hero_img">
-          <img src="assets/images/hero.png" alt="">
-        </div>
-        <div class="hero_content">
-          <h2>Hi, i am</h2>
-          <h1>Anh Tran <img src="assets/images/shape-two.png" alt="" class="text_shape"></h1>
-          <h3>I am a <span class="text"></span></h3>
-          <div class="hero_btns">
-            <button>Download CV</button>
-            <button>Hire me <i class="ri-arrow-right-up-line"></i></button>
+        <img src="assets/images/sign.png" alt="">
+      </div>
+      <div class="about_img">
+        <img src="assets/images/about.jpg" alt="" class="about_image">
+        <div class="hidden_icons">
+          <div class="icon">
+            <img src="assets/images/item-1.png" alt="">
+          </div>
+          <div class="icon">
+            <img src="assets/images/item-2.png" alt="">
+          </div>
+          <div class="icon">
+            <img src="assets/images/item-3.png" alt="">
           </div>
         </div>
-        <div class="top_bg_text">Anh</div>
-        <div class="bottom_bg_text">Tran</div>
-        <img src="assets/images/shape-1.png" alt="" class="hero_bg_shape">
-        <!-- <img src="assets/images/shape-2.png" alt="" class="hero_bg_shape hero_bg_shape2">
-        <img src="assets/images/shape-3.png" alt="" class="hero_bg_shape hero_bg_shape3">
-        <img src="assets/images/shape-4.png" alt="" class="hero_bg_shape hero_bg_shape4"> -->
       </div>
-    </header>
+      <div class="about_right">
+        <div class="about_info">
+          <!-- info 1 -->
+          <div class="about_det">
+            <div class="about_det_icon">
+              <div class="about_icon">
+                <img src="assets/images/logo-1.png" alt="">
+              </div>
+              <div class="about_icon">
+                <img src="assets/images/logo-1.png" alt="">
+              </div>
+            </div>
+            <div class="value">90%</div>
+            <div class="det_info">
+              <h2>Frontend <span>(Angular,React)</span></h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia recusandae dolorum deleniti
+                placeat.</p>
+            </div>
+          </div>
+          <!-- info 2 -->
+          <div class="about_det">
+            <div class="about_det_icon">
+              <div class="about_icon">
+                <img src="assets/images/logo-3.png" alt="">
+              </div>
+              <div class="about_icon">
+                <img src="assets/images/logo-4.png" alt="">
+              </div>
+            </div>
+            <div class="value">85%</div>
+            <div class="det_info">
+              <h2>Backend <span>(Php,Python)</span></h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia recusandae dolorum deleniti
+                placeat.</p>
+            </div>
+          </div>
 
-    <!-- Typed JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    <!-- Swiper Slider CSS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-     <script src="script.js"></script>
-  </body>
+          <!-- info 3 -->
+          <div class="about_det">
+            <div class="about_det_icon">
+              <div class="about_icon">
+                <img src="assets/images/logo-5.png" alt="">
+              </div>
+              <div class="about_icon">
+                <img src="assets/images/logo-6.png" alt="">
+              </div>
+            </div>
+            <div class="value">85%</div>
+            <div class="det_info">
+              <h2>Graphics <span>(Photoshop,sketch)</span></h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia recusandae dolorum deleniti
+                placeat.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION EXPERIENCE -->
+  <section class="education_experience" id="resume">
+    <img src="assets/images/achieve-shape-1.png" alt="" class="achieve_shape achieve_shape1">
+    <img src="assets/images/achieve-shape-2.png" alt="" class="achieve_shape achieve_shape2">
+    <img src="assets/images/about-shape-3.png" alt="" class="achieve_shape achieve_shape3">
+    <div class="headings">
+      <h1>What I <span>Achieve</span></h1>
+      <div class="anim_line_box"></div>
+    </div>
+    <div class="education_btn">
+      <button class="education">Education</button>
+      <button class="experience">Experience</button>
+    </div>
+    <div class="education_container">
+      <div class="education_left">
+        <div class="education_box hide_box">
+          <h2>BAC in Computer Science - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+        <div class="education_box show_box">
+          <h2>BAC in Neuroscience - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+        <div class="education_box hide_box">
+          <h2>DEC Health Science - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+        <div class="education_box show_box">
+          <h2>Cybersecurity training - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+      </div>
+
+      <div class="gap_line"></div>
+      <div class="experience_right">
+        <div class="experience_box show_box">
+          <h2>AI Trainer - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+        <div class="experience_box hide_box">
+          <h2>Sleep lab - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+        <div class="experience_box show_box">
+          <h2>Stylist - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+        <div class="experience_box hide_box">
+          <h2>Tutor - <span>First Class</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, mollitia earum ea laboriosam quis eos
+            iusto? Ut, enim nesciunt dolore minima, corrupti nam inventore excepturi optio quae tenetur, perferendis
+            aspernatur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="headings">
+      <h1>Featured <span>Projects</span></h1>
+      <div class="anim_line_box"></div>
+    </div>
+
+    <div class="projects_cards">
+      <div class="project_card">
+        <div class="project_img">
+          <a href="https://sunset-hues.onrender.com/" target="_blank"><img src="assets/images/project-1.jpg" alt=""></a>
+        </div>
+        <div class="project_info">
+          <h2>Sunset Hues</h2>
+          <h5>React | Node js | Express </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam repellat blanditiis magni,
+            provident, inventore id eius iusto eum nihil est repellendus quae! Id perspiciatis voluptate, quibusdam
+            inventore atque neque. <span>Read More</span></p>
+        </div>
+      </div>
+
+      <div class="project_card">
+        <div class="project_img">
+          <img src="assets/images/project-1.jpg" alt="">
+        </div>
+        <div class="project_info">
+          <h2>Sunset Hues</h2>
+          <h5>React | Node js | Express </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam repellat blanditiis magni,
+            provident, inventore id eius iusto eum nihil est repellendus quae! Id perspiciatis voluptate, quibusdam
+            inventore atque neque. <span>Read More</span></p>
+        </div>
+      </div>
+
+      <div class="project_card">
+        <div class="project_img">
+          <img src="assets/images/project-1.jpg" alt="">
+        </div>
+        <div class="project_info">
+          <h2>Sunset Hues</h2>
+          <h5>React | Node js | Express </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam repellat blanditiis magni,
+            provident, inventore id eius iusto eum nihil est repellendus quae! Id perspiciatis voluptate, quibusdam
+            inventore atque neque. <span>Read More</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+   <section class="footer">
+    <div class="social_icons">
+      <i class="ri-linkedin-fill"></i>
+      <i class="ri-github-fill"></i>
+    </div>
+   </section>
+
+  <!-- Typed JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  <!-- Swiper Slider CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 
 </html>
