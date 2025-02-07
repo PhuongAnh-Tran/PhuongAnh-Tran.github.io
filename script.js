@@ -1,11 +1,32 @@
 // TYPED JS
-
 var typed = new Typed('.text', {
-    strings: ['Web Developer', 'Designer', 'Creative Developer'],
+    strings: ['Software Developer', 'UI/UX Explorer', 'Creative Developer', 'Tech Enthusiast', 'Problem Solver'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
 });
+
+// scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutContainer = document.querySelector('.about_container');
+    const headings = document.querySelectorAll('.headings');
+  
+    // Create an Intersection Observer instance
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        // Check if the element is in view
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.5 
+    });
+  
+    observer.observe(aboutContainer);
+    headings.forEach(heading => observer.observe(heading));
+  });
 
 // SHOW EDUCATION & EXPERIENCE
 let EducationBtn = document.querySelector('.education');
