@@ -10,6 +10,7 @@ var typed = new Typed('.text', {
 document.addEventListener('DOMContentLoaded', function() {
     const aboutContainer = document.querySelector('.about_container');
     const headings = document.querySelectorAll('.headings');
+    
   
     // Create an Intersection Observer instance
     const observer = new IntersectionObserver((entries, observer) => {
