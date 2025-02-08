@@ -66,7 +66,7 @@ nav {
   width: 80%;
   height: 70px;
   padding: 0 3%;
-  border-radius: 50px;
+  border-radius: 50px; 
   border: 1px solid var(--dark-color);
   position: fixed;
   top: 3%;
@@ -348,7 +348,7 @@ button:hover{
   width: 100%;
   justify-content:flex-end; 
   align-items: center;
-  margin-bottom: 130px;
+  margin-bottom: 2%;
 }
 
 .about_container {
@@ -363,10 +363,6 @@ button:hover{
 
 .about_container.animate {
   animation: slide-in-right 1.5s ease-out forwards;
-}
-
-.about_header_animate{
-
 }
 
 .headings{
@@ -636,12 +632,13 @@ button:hover{
 }
 
 .education_btn{
-  width: 40%;
+  width: 30%;
   padding: 10px;
   border-radius: 50px;
   border: 1px solid var(--dark-color);
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
@@ -657,6 +654,7 @@ button:hover{
   align-items: center;
   gap: 50px;
   position: relative;
+  margin-bottom: -18%;
 }
 
 .education_left,
@@ -778,6 +776,8 @@ button:hover{
 .projects{
   flex-direction: column;
   gap: 50px;
+  padding: 15%;
+  margin-bottom: -20%;
 }
 
 .projects_btns{
@@ -845,6 +845,7 @@ button:hover{
   padding: 5%;
   padding-top: 15%;
   border-radius: 20px;
+  height: 300px;
 }
 
 .project_info h2{
@@ -872,6 +873,10 @@ button:hover{
   font-size: 1rem;
   font-weight: 500;
   color: var(--black-color);
+}
+
+.contactme {
+  padding: 15%;
 }
 
 .contact-form {
@@ -937,19 +942,28 @@ button:hover{
 }
 
 @media (max-width:1200px) {
+  .nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero_img{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
   .bottom_bg_text{
     top: 70%;
     left: 30%;
   }
-  .hero_img img{
-    width: 100%;
-  }
+
   .hero_content{
     width: 45%;
   }
-  .hero_img{
-    width: 45%;
-  }
+
   .border_shape{
     width: 55%;
   }
@@ -988,20 +1002,32 @@ button:hover{
     font-size: 1rem;
   }
   .about_container{
-    grid-template-columns: repeat(2,1fr);
+    margin-right: 10%;
+    border-right-color: black;
   }
   .about_shape2{
     display: none;
+  }
+
+  .headings{
+    margin-right: 5%;
+    margin-left: 5%;
   }
   .education_btn{
     width: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 15%;
+  }
+
+  .education_container{
+    margin-right: 10%;
+    margin-left: -5%;
   }
 
   .project_info {
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1018,6 +1044,7 @@ button:hover{
 
   .projects_cards{
     margin-top: 3%;
+    margin-right: 15%;
   }
 
   .project_card{
@@ -1031,6 +1058,29 @@ button:hover{
   .projects_btns button{
     width: 200px;
     padding: 0 20px;
+  }
+}
+
+@media (max-width:709px) {
+  .about_container{
+    border-right-color: black;
+  }
+
+  .project_info {
+    height: 450px;
+  }
+
+}
+
+@media (max-width:663px) {
+  .education_btn button{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:615px) {
+  .project_info{
+    height: 470px;
   }
 }
 
@@ -1191,9 +1241,15 @@ button:hover{
   .gap_line,
   .education_box:after,
   .experience_box:after,
-  .experience_right{
+  .experience_right,
+  .line{
     display: none !important;
   } 
+
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
 
   .hero_img,
   .hero_shape{
@@ -1201,7 +1257,11 @@ button:hover{
   }
 
   .hero_header{
-    margin-top: 25%;
+    padding: 10%;
+  }
+
+  .about{
+    padding: 10%;
   }
 
   .hero_content h1 {
@@ -1282,6 +1342,10 @@ button:hover{
     border-radius: 30px;
   }
 
+  .education_experience{
+    margin-left: 5%;
+  }
+
   .achieve_shape1{
     display: none;
   }
@@ -1289,6 +1353,10 @@ button:hover{
   .projects_btns{
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .project_info{
+    height: 420px;
   }
 
   .education_container{
