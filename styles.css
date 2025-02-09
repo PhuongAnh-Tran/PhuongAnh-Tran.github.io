@@ -628,7 +628,7 @@ button:hover{
   flex-direction: column;
   gap: 50px;
   position: relative; 
-  padding: 10%;
+  padding: 15%;
 }
 
 .education_btn{
@@ -772,111 +772,118 @@ button:hover{
 }
 
 /* FEATURED PROJECTS */
-
-.projects{
-  flex-direction: column;
-  gap: 50px;
-  padding: 15%;
-  margin-bottom: -20%;
-}
-
-.projects_btns{
-  width: 60%;
-  border: 1px solid var(--dark-color);
+.projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border-radius: 50px;
-  padding: 10px;
+  padding: 5% 10%;
+  margin-bottom: 5%;
 }
 
-.projects_btns button{
-  width: 150px;
-  height: 40px;
-  font-size: 1.2rem;
-  border: none;
+.headings {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.projects_btns button:active,
-.projects_btns button:focus{
-  background-color: var(--prime-color);
-  color: var(--white-color);
-  cursor: pointer;
-  border-color: var(--prime-color);
+.headings h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.projects_cards{
+.headings .line {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Projects Cards Container */
+.projects_cards {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  place-content: center;
-  place-items: center;
-  gap: 20px;
-  margin-top: 20%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
 }
 
-.project_card{
+/* Project Card  */
+.project_card {
+  background: #fff;
+  border: 1px solid var(--black-color, #333);
+  border-radius: 10px;
+  overflow: hidden;
   width: 100%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 5px;
-  position: relative;
+  align-items: center;
+  /* Optional: add a margin-bottom to mimic a polaroid's bottom border */
+  margin-bottom: 20px;
 }
 
-.project_img{
-  position: absolute;
-  top: -35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid var(--black-color);
+/* Project Image: sits at the top */
+.project_img {
+  width: 100%;
 }
 
-.project_img:hover{
-  border: 1px solid var(--prime-color);
+.project_img img {
+  width: 100%;
+  display: block;
 }
 
-.project_info{
-  border: 1px solid var(--black-color);
-  padding: 5%;
-  padding-top: 15%;
-  border-radius: 20px;
-  height: 400px;
+/* Project Info: description, centered text, and button */
+.project_info {
+  padding: 20px;
+  text-align: center;
 }
 
-.project_info h2{
+.project_info h2 {
   font-size: 1.5rem;
-  font-weight: 500;
-  transition: var(--transition);
+  margin: 10px 0;
+  transition: color 0.3s ease;
 }
 
-.project_info h2:hover{
-  color: var(--prime-color);
+.project_info h2:hover {
+  color: var(--prime-color, #307351);
   cursor: pointer;
 }
 
-.project_info h5{
-  font-weight: 300;
+.project_info h5 {
+  font-size: 1rem;
+  margin: 5px 0;
   color: #999;
 }
 
-.project_info p{
+.project_info p {
   font-size: 1rem;
-  font-weight: 300;
+  margin: 15px 0;
+  line-height: 1.5;
 }
 
-.project_info p span{
-  font-size: 1rem;
+.project_info p span {
   font-weight: 500;
-  color: var(--black-color);
+  color: var(--black-color, #333);
 }
+
+/* Live Demo Button Styling
+.project_info a button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background: var(--dark-color, #307351);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.project_info a button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
 
 .contactme {
-  padding: 20%;
+  padding: 10%;
 }
 
 .contact-form {
