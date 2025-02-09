@@ -390,6 +390,10 @@ button:hover{
   color: var(--prime-color);
 }
 
+.headings img {
+  margin: 10%;
+}
+
 @keyframes shape_up_down {
   0%{
     top: 0;
@@ -630,6 +634,16 @@ button:hover{
   position: relative; 
   padding: 15%;
 }
+
+.education_image{
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 35%;
+  height: auto;
+  animation: rotate1 6s infinite linear;
+}
+
 
 .education_btn{
   width: 30%;
