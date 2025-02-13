@@ -828,7 +828,6 @@ button:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Optional: add a margin-bottom to mimic a polaroid's bottom border */
   margin-bottom: 20px;
 }
 
@@ -1064,6 +1063,7 @@ button:hover{
 
   .projects_cards{
     margin-top: 3%;
+    grid-template-columns: repeat(2, 1fr);
     margin-right: 15%;
   }
 
